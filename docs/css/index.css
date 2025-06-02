@@ -1,0 +1,31 @@
+* {
+	font-family: Roboto;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+h1 {
+	color: gray;
+	font-size: 10rem;
+}
+
+.material-symbols-outlined {
+	color: gray;
+	font-size: 15rem;
+	font-variation-settings:
+		'FILL' 0,
+		'wght' 400,
+		'GRAD' 0,
+		'opsz' 24
+}
