@@ -43,7 +43,7 @@ body {
 	border-radius: 50%;
 	overflow: hidden;
 	border: 15px solid rgba(235, 235, 235);
-	position: relative;
+	position: fixed;
 	top: 15%;
 	/* box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1); */
 }
