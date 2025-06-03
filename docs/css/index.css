@@ -9,23 +9,46 @@ body {
 
 .container {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center;
-	justify-content: center;
 	height: 100%;
 }
 
-h1 {
-	color: gray;
-	font-size: 10rem;
+.left-pane {
+	width: 25%;
+	height: 100%;
+	background-color: rgba(205, 205, 205);
 }
 
-.material-symbols-outlined {
-	color: gray;
-	font-size: 15rem;
-	font-variation-settings:
-		'FILL' 0,
-		'wght' 400,
-		'GRAD' 0,
-		'opsz' 24
+.center-pane {
+	width: 15%;
+	height: 100%;
+	background-image: url('/gfx/bg.svg');
+	background-repeat: repeat;
+	display: flex;
+	justify-content: center;
+}
+
+.right-pane {
+	width: 60%;
+	height: 100%;
+	background-color: rgba(235, 235, 235);
+}
+
+.photo-container {
+	background-color: #000000;
+	display: flex;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 15px solid rgba(235, 235, 235);
+	position: relative;
+	top: 15%;
+}
+
+.photo {
+	position: relative;
+	left: 20px;
+	top: 10px;
 }
