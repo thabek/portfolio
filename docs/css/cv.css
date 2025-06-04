@@ -21,6 +21,13 @@ body {
 	height: 29.7cm;
 }
 
+@media only screen {
+	.container {
+		box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+		border: 1px solid rgb(230, 230, 230);
+	}
+}
+
 .container>.pane-left {
 	display: flex;
 	width: 7cm;
@@ -29,12 +36,31 @@ body {
 	padding: 0 0.6cm;
 }
 
+.container>.pane-left li>p {
+	line-height: 0.55cm;
+}
+
 .container>.pane-right {
 	display: flex;
 	width: 14cm;
 	height: 100%;
 	background-color: rgb(245, 245, 245);
 	padding: 0 0.6cm;
+}
+
+.container>.pane-right .skills p {
+	line-height: 0.55cm;
+	text-align: justify;
+}
+
+
+.container>.pane-right .skills>p>span::after {
+	content: '\2002▪\202F';
+}
+
+
+.container>.pane-right .skills>p>span:last-child::after {
+	content: '';
 }
 
 .container>.pane-left>ul,
@@ -79,4 +105,21 @@ h2 {
 
 h3 {
 	font-size: large;
+	margin-top: 0.9cm;
+	margin-bottom: 0.3cm;
+}
+
+.experience>ul {
+	display: table;
+	column-gap: 0.3cm;
+}
+
+.experience>ul>li {
+	display: table-row;
+	line-height: 0.55cm;
+}
+
+.experience>ul>li>* {
+	display: table-cell;
+	padding-right: 0.6cm;
 }
