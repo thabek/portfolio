@@ -1,0 +1,87 @@
+* {
+	font-family: Roboto;
+	font-weight: 200;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	display: flex;
+	width: 21cm;
+	height: 29.7cm;
+}
+
+.container>.left-pane {
+	width: 7cm;
+	height: 100%;
+	background-color: rgb(230, 230, 230);
+}
+
+.container>.left-pane>ul {
+	margin: 11cm 0.5cm 0.5cm 0.5cm;
+}
+
+.container>.left-pane>ul>li {
+	margin-top: 1cm;
+}
+
+.container>.right-pane {
+	width: 14cm;
+	height: 100%;
+	background-color: rgb(245, 245, 245);
+}
+
+.container>.right-pane>ul {
+	margin: 11cm 0.5cm 0.5cm 0.5cm;
+}
+
+.right-pane>ul>li>ul>li {
+	display: flex;
+	column-gap: 1cm;
+}
+
+.container>.photo-pane {
+	position: absolute;
+	margin-left: 4.5cm;
+	margin-top: 4.5cm;
+	/* width: 5cm; */
+	height: 5cm;
+	display: flex;
+}
+
+.container>.photo-pane>.photo-container {
+	width: 5cm;
+	border-radius: 50%;
+	overflow: hidden;
+	background-color: black;
+	border: 0.25cm solid rgb(245, 245, 245);
+}
+
+.container>.photo-pane>.photo-container>.photo {
+	position: relative;
+	left: 0.5cm;
+	top: 0.25cm;
+}
+
+.container>.photo-pane>.header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 1.5cm;
+	padding-bottom: 0.1cm;
+}
+
+h1 {
+	font-weight: 400;
+}
+
+h2 {
+	font-weight: 200;
+}
