@@ -1,6 +1,12 @@
 * {
 	font-family: Roboto;
 	font-weight: 200;
+	line-height: 1.5;
+	color: black;
+	text-decoration: none;
+	overflow-wrap: break-word;
+	text-wrap: pretty;
+	font-size: 10pt;
 }
 
 html,
@@ -16,36 +22,31 @@ body {
 	display: flex;
 	width: 21cm;
 	height: 29.7cm;
+	box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.1);
+	border: 1px solid #e6e6e6;
+}
+
+@media only print {
+	.container {
+		box-shadow: initial;
+		border: initial;
+	}
 }
 
 .container>.left-pane {
 	width: 7cm;
 	height: 100%;
 	background-color: rgb(230, 230, 230);
-}
-
-.container>.left-pane>ul {
-	margin: 11cm 0.5cm 0.5cm 0.5cm;
-}
-
-.container>.left-pane>ul>li {
-	margin-top: 1cm;
+	padding: 11cm 0.7cm 0.7cm 0.7cm;
 }
 
 .container>.right-pane {
 	width: 14cm;
 	height: 100%;
 	background-color: rgb(245, 245, 245);
+	padding: 11cm 0.7cm 0.7cm 0.7cm;
 }
 
-.container>.right-pane>ul {
-	margin: 11cm 0.5cm 0.5cm 0.5cm;
-}
-
-.right-pane>ul>li>ul>li {
-	display: flex;
-	column-gap: 1cm;
-}
 
 .container>.photo-pane {
 	position: absolute;
@@ -66,9 +67,15 @@ body {
 
 .container>.photo-pane>.photo-container>.photo {
 	position: relative;
-	left: 0.5cm;
-	top: 0.25cm;
+	/* left: 0.5cm; */
+	/* top: 0.25cm; */
 }
+
+.container>.photo-pane>.photo-container>.photo>img {
+	width: 4.5cm;
+	height: 4.5cm;
+}
+
 
 .container>.photo-pane>.header {
 	display: flex;
@@ -80,8 +87,31 @@ body {
 
 h1 {
 	font-weight: 400;
+	font-size: xx-large;
 }
 
 h2 {
 	font-weight: 200;
+	font-size: x-large;
+}
+
+h3 {
+	font-size: large;
+	margin-top: 1cm;
+	margin-bottom: 0.2cm;
+}
+
+p {
+	font-size: 10pt;
+}
+
+.skills>p {
+	text-align: justify;
+}
+
+.skills>p>span::after {
+	content: '\2002▪\202F';
+}
+.skills>p>span:last-child::after {
+	content: '';
 }
