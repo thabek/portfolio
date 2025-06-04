@@ -31,14 +31,16 @@ body {
 
 .container>.pane-left {
 	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	width: 7cm;
 	height: 100%;
 	background-color: rgb(230, 230, 230);
-	padding: 0 0.6cm;
+	padding: 0 0.9cm 1cm 0.9cm;
 }
 
 .container>.pane-left li>p {
-	line-height: 0.55cm;
+	line-height: 150%;
 }
 
 .container>.pane-right {
@@ -46,11 +48,11 @@ body {
 	width: 14cm;
 	height: 100%;
 	background-color: rgb(245, 245, 245);
-	padding: 0 0.6cm;
+	padding: 0 0.9cm 1cm 0.9cm;
 }
 
 .container>.pane-right .skills p {
-	line-height: 0.55cm;
+	line-height: 150%;
 	text-align: justify;
 }
 
@@ -123,4 +125,10 @@ h3 {
 .experience>ul>li>* {
 	display: table-cell;
 	padding-right: 0.6cm;
+}
+
+.clause {
+	font-size: 7pt;
+	line-height: 140%;
+	text-align: justify;
 }
